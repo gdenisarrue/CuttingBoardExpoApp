@@ -1,0 +1,47 @@
+{
+  "expo": {
+    "name": "CuttingBoardAI",
+    "slug": "cutting-board-ai",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "myapp",
+    "userInterfaceStyle": "dark",
+    "newArchEnabled": true,
+    "ios": {
+      "supportsTablet": true
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "single",
+      "favicon": "./assets/images/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Allow CuttingBoardAI to access your camera to take photos of recipes."
+        }
+      ],
+      [
+        "expo-media-library",
+        {
+          "photosPermission": "Allow CuttingBoardAI to access your photos to save recipe images.",
+          "savePhotosPermission": "Allow CuttingBoardAI to save photos of your recipes.",
+          "isAccessMediaLocationEnabled": true
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Allow CuttingBoardAI to access your photos to select recipe images."
+        }
+      ],
+      "expo-font"
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}
